@@ -194,6 +194,8 @@
   background: #000000;
   background: linear-gradient(to right, #161616, #000000);
   padding: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .hero_container {
@@ -240,7 +242,7 @@
   border-bottom: 4px solid rgb(132, 0, 255);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 412px) {
   .hero_heading {
     font-size: 60px;
   }
@@ -414,7 +416,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 412px) {
   .main_image--card {
     width: 250px;
     height: 250px;
@@ -487,9 +489,16 @@
 }
 
 .services_card:nth-child(2) {
-  background: #1fa2ff;
-  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
-  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(to right, #fc00ff 0, #00dbde 100%);
+  transition: 0.3s ease-in;
 }
 
 .services_card:nth-child(3) {
@@ -669,7 +678,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 412px) {
   .footer_link-items {
     margin: 0;
     padding: 10px;
